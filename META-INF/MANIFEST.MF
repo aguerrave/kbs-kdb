@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: KBS KanbanBoard
+Bundle-SymbolicName: com.kylinsystems.kbs.kdb;singleton:=true
+Bundle-Version: 6.2.0.qualifier
+Bundle-Activator: com.kylinsystems.kbs.odt.Activator
+Bundle-Vendor: KSYS
+Comment: Bundle-RequiredExecutionEnvironment: JavaSE-11
+Export-Package: org.kanbanboard.apps.form,
+ org.kanbanboard.model,
+ org.kanbanboard.process,
+ org.kanbanboard.webui.apps.form,
+ org.kanbanboard.webui.factory
+Import-Package: org.compiere.apps
+Require-Bundle: org.adempiere.base;bundle-version="0.0.0",
+ org.adempiere.plugin.utils;bundle-version="0.0.0",
+ org.adempiere.ui;bundle-version="0.0.0",
+ org.adempiere.ui.zk;bundle-version="0.0.0",
+ zcommon;bundle-version="0.0.0",
+ zel;bundle-version="0.0.0",
+ zhtml;bundle-version="0.0.0",
+ zk;bundle-version="0.0.0",
+ zkbind;bundle-version="0.0.0",
+ zkplus;bundle-version="0.0.0",
+ zul;bundle-version="0.0.0",
+ zweb;bundle-version="0.0.0",
+ com.kylinsystems.kbs.odt;bundle-version="0.0.0"
+Bundle-ClassPath: .
+Service-Component: OSGI-INF/*.xml
+Bundle-ActivationPolicy: lazy
+Automatic-Module-Name: com.kylinsystems.kbs.kdb
